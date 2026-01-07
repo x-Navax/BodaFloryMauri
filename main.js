@@ -45,3 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+  window.addEventListener("scroll", () => {
+    if (!flechaOculta && window.scrollY > 10) {
+      document.getElementById("scrollArrow").classList.add("hide");
+      flechaOculta = true;
+    }
+  });
