@@ -46,10 +46,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const flecha = document.getElementById("scrollArrow");
+  let ocultada = false;
 
-  window.addEventListener("scroll", () => {
-    if (!flechaOculta && window.scrollY > 10) {
-      document.getElementById("scrollArrow").classList.add("hide");
-      flechaOculta = true;
+  function ocultarFlecha() {
+    if (!ocultada && (window.scrollY > 0 || document.documentElement.scrollTop > 0)) {
+      flecha.classList.add("hide");
+      ocultada = true;
     }
-  });
+  }
+
+  // Scroll normal
+  window.addEventListener("scroll", ocultarFlecha, { passive: true });
+
+  // Touch (iOS / Android)
+  window.addEventListener("touchmove", ocultarFlecha, { passive: true });
+});

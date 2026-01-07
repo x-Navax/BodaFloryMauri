@@ -245,7 +245,14 @@ footer a:hover {
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999;
+  z-index: 9999;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-boda.hide {
+  opacity: 0;
+  transform: translateX(-50%) translateY(15px);
+  pointer-events: none;
 }
 
 .scroll-boda span {
@@ -256,11 +263,11 @@ footer a:hover {
   border-right: 2px solid rgba(0, 0, 0, 0.9);
   transform: rotate(45deg);
   margin: -4px;
-  animation: flechaBoda 1.8s infinite;
+  animation: flechaBoda 1.6s infinite;
 }
 
 .scroll-boda span:nth-child(2) {
-  animation-delay: 0.3s;
+  animation-delay: 0.25s;
   opacity: 0.6;
 }
 
@@ -269,18 +276,9 @@ footer a:hover {
     opacity: 0;
     transform: rotate(45deg) translate(-6px, -6px);
   }
-  50% {
-    opacity: 1;
-  }
+  50% { opacity: 1; }
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(6px, 6px);
-  }
-}
-
-/* Solo mobile */
-@media (min-width: 768px) {
-  .scroll-boda {
-    display: none;
   }
 }
