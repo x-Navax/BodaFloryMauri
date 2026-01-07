@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Shadows+Into+Light&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+}
+
+/* Header */
+
+.nombres{
+    width: 100%;
+    height: auto;
+}
+
+/* inicio contador */
+.contador {background-color: #cfc6bd;
+  padding: 40px 0 20px 0;
+  }
+.contador p {font-family: "Handlee", cursive;
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 20px;}
+  .centrado {text-align: center;}
+.time_circles {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bebas Neue', cursive;
+  color: #ffffff;
+  margin-top: -30px;
+
+  }
+  
+.time_circles div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  margin: 0.8rem;
+  }
+  
+.time_circles span.number {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+  }
+  
+.time_circles span.text {
+  font-size: 1.1rem; 
+  text-transform: uppercase;
+  }
+.mensaje {text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: red;}
+
+
+/* fin contador */
+
+/* CEREMONIA */
+.ceremonia {
+  font-family: "Handlee", cursive;
+  
+}
+.capilla {
+  width: 5rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* FIESTA */
+.fiesta {
+  font-family: "Handlee", cursive;
+  margin-top: 30px;
+  margin-bottom: 30PX;
+  
+}
+.copa {
+  width: 5rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+/* GALERIA */
+
+.galeria {
+  font-family: "Handlee", cursive;
+  margin-top: 30px;
+  
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* REGALOS */
+.regalos {
+  background-color: #cfc6bd;
+   padding: 40px 0 20px 0;
+  font-family: "Handlee", cursive;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.regalo{
+   width: 5rem;
+  margin-bottom: 20px;
+}
+
+.centrado{ margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* INSTAGRAM */
+.INSTA {
+  font-family: "Handlee", cursive;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.vestimenta {
+    background-color: #cfc6bd;
+   padding: 40px 0 20px 0;
+  font-family: "Handlee", cursive;
+}
+.pareja{
+     width: 5rem;
+  margin-bottom: 20px;
+}
+
+/* BOTONES */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #8b5e3c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-family: "Handlee", cursive;
+}
+
+.btn.white {
+  background: #fff;
+  color: #8b5e3c;
+}
+
+.whatsapp-section {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Handlee", cursive;
+}
+
+.whatsapp-section h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+/* GRID */
+.whatsapp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* BOTONES */
+.btn-wsp {
+  padding: 15px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-wsp:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* COLORES */
+.btn-wsp.novio {
+  background-color: #25D366;
+}
+
+.btn-wsp.novia {
+  background-color: #25D366;
+  background-color: #128C7E;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .whatsapp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer{
+    background-color: #dacaad;
+    color: black;
+    margin-top: 30px;
+    width: 100%;
+}
+
+footer a span {
+  color: #000;
+  text-decoration: none; /* también sirve acá */
+}
+
+footer span:hover {
+  color: purple; /* opcional: cambia al pasar el mouse */
+}
+footer a:hover {
+  color: purple; /* opcional: cambia al pasar el mouse */
+}
+
+
+.logoInsta {
+    width: 1.3rem;
+}
+
