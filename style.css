@@ -20,7 +20,7 @@ body{
 }
 
 /* inicio contador */
-.contador {background-color: #cfc6bd;
+.contador {background-color: #407739;
   padding: 40px 0 20px 0;
   }
 .contador p {font-family: "Handlee", cursive;
@@ -112,7 +112,7 @@ body{
 
 /* REGALOS */
 .regalos {
-  background-color: #cfc6bd;
+  background-color: #407739;
    padding: 40px 0 20px 0;
   font-family: "Handlee", cursive;
   margin-top: 30px;
@@ -137,7 +137,7 @@ body{
 }
 
 .vestimenta {
-    background-color: #cfc6bd;
+    background-color: #407739;
    padding: 40px 0 20px 0;
   font-family: "Handlee", cursive;
 }
@@ -151,7 +151,7 @@ body{
   display: inline-block;
   margin-top: 20px;
   padding: 12px 28px;
-  background: #8b5e3c;
+  background: #1a4614;
   color: #fff;
   text-decoration: none;
   border-radius: 30px;
@@ -161,7 +161,7 @@ body{
 
 .btn.white {
   background: #fff;
-  color: #8b5e3c;
+  color: #407739;
 }
 
 .whatsapp-section {
@@ -218,7 +218,7 @@ body{
 }
 
 footer{
-    background-color: #dacaad;
+    background-color: #407739;
     color: black;
     margin-top: 30px;
     width: 100%;

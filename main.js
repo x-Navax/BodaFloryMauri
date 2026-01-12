@@ -63,3 +63,25 @@ document.addEventListener("DOMContentLoaded", function () {
   // Touch (iOS / Android)
   window.addEventListener("touchmove", ocultarFlecha, { passive: true });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const mensaje = `
+Hola! 👋
+Queríamos confirmar tu asistencia a la boda 💍
+
+✅ ¿Asistís a la boda? (Sí / No)
+👥 ¿Cuántas personas asisten?
+🍽️ ¿Tenés alguna restricción alimenticia?
+`;
+
+  const botones = document.querySelectorAll(".btn-wsp");
+
+  botones.forEach((boton) => {
+    const phone = boton.dataset.phone;
+    const mensajeCodificado = encodeURIComponent(mensaje);
+
+    boton.href = `https://api.whatsapp.com/send?phone=${phone}&text=${mensajeCodificado}`;
+  });
+});
