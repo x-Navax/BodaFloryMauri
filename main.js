@@ -1,5 +1,5 @@
 // fecha límite
-var fechaLimite = new Date("April 11, 2026 21:00:00").getTime();
+var fechaLimite = new Date("April 4, 2026 21:00:00").getTime();
 
 // actualizar el contador cada un segundo
 var intervalo = setInterval(function () {
@@ -31,7 +31,7 @@ var intervalo = setInterval(function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   const boton = document.getElementById("copyAlias");
-  const alias = "milero.mp"; // ESCRIBÍ TU ALIAS ACÁ
+  const alias = "mmmeel.r3."; // ESCRIBÍ TU ALIAS ACÁ
 
   boton.addEventListener("click", () => {
     navigator.clipboard.writeText(alias).then(() => {
@@ -69,9 +69,9 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
   const mensaje = `
 Hola! 👋
-Queríamos confirmar tu asistencia a la boda 💍
+Queríamos confirmar tu asistencia a mi cumple 🎉​
 
-✅ ¿Asistís a la boda? (Sí / No)
+✅ ¿Asistís al cumpleaños? (Sí / No)
 👥 ¿Cuántas personas asisten?
 🍽️ ¿Tenés alguna restricción alimenticia?
 `;
