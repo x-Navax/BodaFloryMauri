@@ -9,24 +9,8 @@
 
 body{
   text-align: center;
-  background-image: url(./imagenes/Invitación\ vertical\ quince\ años\ floral\ rosado\ \(1\).png);
-  background-size: cover;
-  background-position: center;
-
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
 /* Header */
 
 .nombres{
@@ -36,13 +20,11 @@ main {
 }
 
 /* inicio contador */
-.contador {
-  background-color: #ffffff;
+.contador {background-color: #407739;
   padding: 40px 0 20px 0;
-  color: #000000;
   }
 .contador p {font-family: "Handlee", cursive;
-    color: #ff25a8;
+    color: white;
     font-size: 1.4rem;
     margin-bottom: 20px;}
   .centrado {text-align: center;}
@@ -50,7 +32,7 @@ main {
   display: flex;
   justify-content: center;
   font-family: 'Bebas Neue', cursive;
- color: #ff9bd7;
+  color: #ffffff;
   margin-top: -30px;
 
   }
@@ -99,7 +81,6 @@ main {
   font-family: "Handlee", cursive;
   margin-top: 30px;
   margin-bottom: 30PX;
-  color: #ff25a8;
   
 }
 .copa {
@@ -109,17 +90,34 @@ main {
 }
 
 
+/* GALERIA */
 
+.galeria {
+  font-family: "Handlee", cursive;
+  margin-top: 30px;
+  
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
 
 /* REGALOS */
 .regalos {
-  
+  background-color: #407739;
    padding: 40px 0 20px 0;
   font-family: "Handlee", cursive;
   margin-top: 30px;
   text-align: center;
   align-items: center;
-  color: #ff58e9;
 }
 
 .regalo{
@@ -131,11 +129,15 @@ main {
   margin-right: 20px;
 }
 
-
+/* INSTAGRAM */
+.INSTA {
+  font-family: "Handlee", cursive;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
 .vestimenta {
-     background-color: #ffffff;
-     color: #ff25a8;
+    background-color: #407739;
    padding: 40px 0 20px 0;
   font-family: "Handlee", cursive;
 }
@@ -149,7 +151,7 @@ main {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 28px;
-  background: #ff58e9;
+  background: #1a4614;
   color: #fff;
   text-decoration: none;
   border-radius: 30px;
@@ -159,12 +161,13 @@ main {
 
 .btn.white {
   background: #fff;
-  color: #ff58e9;
+  color: #407739;
 }
 
 .whatsapp-section {
   max-width: 500px;
   margin: 60px auto;
+  padding: 20px;
   text-align: center;
   font-family: "Handlee", cursive;
 }
@@ -172,7 +175,6 @@ main {
 .whatsapp-section h2 {
   margin-bottom: 25px;
   font-size: 22px;
- color: #ff25a8;
 }
 
 /* GRID */
@@ -201,10 +203,12 @@ main {
 /* COLORES */
 .btn-wsp.novio {
   background-color: #25D366;
-  margin: 20px;
 }
 
-
+.btn-wsp.novia {
+  background-color: #25D366;
+  background-color: #128C7E;
+}
 
 /* RESPONSIVE */
 @media (max-width: 480px) {
@@ -214,10 +218,10 @@ main {
 }
 
 footer{
-     background-color: #ff9bd7;
+    background-color: #407739;
     color: black;
+    margin-top: 30px;
     width: 100%;
-    height: auto;
 }
 
 footer a span {
